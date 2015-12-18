@@ -1,0 +1,190 @@
+@startuml
+
+class AdditionOperator {
+	+int getPriorityValue()
+	+void calculate()
+	+{static}Operator* getInstance()
+}
+
+class SubtractionOperator {
+	+int getPriorityValue()
+	+void calculate()
+	+{static}Operator* getInstance()
+}
+
+class MultiplicationOperator {
+	+int getPriorityValue()
+	+void calculate()
+	+{static}Operator* getInstance()
+}
+
+class DivisionOperator {
+	+int getPriorityValue()
+	+void calculate()
+	+{static}Operator* getInstance()
+}
+
+class ExponentiationOperator {
+	+int getPriorityValue()
+	+PriorityDirection getPriorityDirection()
+	+void calculate()
+	+{static}Operator* getInstance()
+}
+
+class LeftBracketOperator {
+	+int getPriorityValue()
+	+PriorityDirection getPriorityDirection()
+	+void deal()
+	+void calculate()
+	+{static}Operator* getInstance()
+}
+
+class RightBracketOperator {
+	+int getPriorityValue()
+	+PriorityDirection getPriorityDirection()
+	+void deal()
+	+void calculate()
+	+{static}Operator* getInstance()
+}
+
+class PositiveOperator {
+	+int getPriorityValue()
+	+PriorityDirection getPriorityDirection()
+	+void deal()
+	+{static}Operator* getInstance()
+}
+
+class NegativeOperator {
+	+int getPriorityValue()
+	+PriorityDirection getPriorityDirection()
+	+void deal()
+	+void calculate()
+	+{static}Operator* getInstance()
+}
+
+class EndOperator {
+	+int getPriorityValue()
+	+PriorityDirection getPriorityDirection()
+	+void deal()
+	+{static}Operator* getInstance()
+}
+
+class ArithmeticOperator {
+	PriorityDirection getPriorityDirection()
+	void deal()
+}
+
+class Expression {
+	+Expression()
+	+Expression& calculate()
+}
+
+class Operator {
+	+{abstract}~Operator()
+	+{abstract}int getPriorityValue()
+	+{abstract}PriorityDirection getPriorityDirection()
+	+{abstract}void deal()
+	+{abstract}void calculate()
+}
+
+class Stack<T> {
+	+T top()
+	+bool empty()
+	+void push(T)
+	+void pop()
+}
+
+class OperatorStack {
+	
+}
+
+class PolynomialStack {
+	
+}
+
+class OperatorStatus {
+	+void dealPolynomial()
+	+void dealOperator()
+	+void dealAmbiguous()
+	+void dealLeftBracket()
+	+void dealRightBracket()
+	+{static}Status* getInstance()
+}
+
+class PolynomialStatus {
+	+void dealPolynomial()
+	+void dealOperator()
+	+void dealAmbiguous()
+	+void dealLeftBracket()
+	+void dealRightBracket()
+	+{static}Status* getInstance()
+}
+
+class Status {
+	+{abstract}void dealPolynomial()
+	+{abstract}void dealOperator()
+	+{abstract}void dealAmbiguous()
+	+{abstract}void dealLeftBracket()
+	+{abstract}void dealRightBracket()
+}
+
+class Polynomial {
+	+Polynomial()
+	+Polynomial operator + () const
+	+Polynomial operator - () const
+	+Polynomial operator * () const
+	+Polynomial operator / () const
+	+Polynomial operator ^ () const
+}
+
+class RationalNumber {
+	+RationalNumber()
+	+RationalNumber operator + () const
+	+RationalNumber operator - () const
+	+RationalNumber operator * () const
+	+RationalNumber operator / () const
+	+RationalNumber operator ^ () const
+	+bool isNonnegativeInteger() const
+	+long long getNumerator() const
+	+bool isPositive() const
+	+bool isInteger() const
+	+bool isZero() const
+	+bool isUnit() const
+}
+
+enum PriorityDirection {
+	LEFT
+	RIGHT
+}
+
+ArithmeticOperator --|> Operator
+Operator <|-- LeftBracketOperator
+Operator <|-- RightBracketOperator
+Operator <|-- PositiveOperator
+Operator <|-- NegativeOperator
+Operator <|-- EndOperator
+AdditionOperator --|> ArithmeticOperator
+SubtractionOperator --|> ArithmeticOperator
+MultiplicationOperator --|> ArithmeticOperator
+DivisionOperator --|> ArithmeticOperator
+ExponentiationOperator --|> ArithmeticOperator
+Stack <|-- OperatorStack:<Operator*>
+Stack <|-- PolynomialStack:<Polynomial>
+Status <|-- PolynomialStatus
+Status <|-- OperatorStatus
+PriorityDirection <. Operator
+Polynomial <.. Expression
+Expression .> Stack
+Expression ..> Operator
+Expression ..> Status
+Polynomial *-- RationalNumber
+Status ..> Polynomial
+Status ..> Operator
+
+skinparam classFontSize 20
+skinparam classAttributeFontSize 18
+skinparam classArrowFontSize 18
+skinparam classStereotypeFontSize 18
+skinparam monochrome true
+
+@enduml

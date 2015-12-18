@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ExpressionCalc" />
+		<Option pch_mode="2" />
+		<Option compiler="clang" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ExpressionCalc" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ExpressionCalc" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Weverything" />
+			<Add option="-std=c++11" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/AdditionOperator.h" />
+		<Unit filename="include/ArithmeticOperator.h" />
+		<Unit filename="include/DivisionOperator.h" />
+		<Unit filename="include/EndOperator.h" />
+		<Unit filename="include/ExponentiationOperator.h" />
+		<Unit filename="include/Expression.h" />
+		<Unit filename="include/LeftBracketOperator.h" />
+		<Unit filename="include/MultiplicationOperator.h" />
+		<Unit filename="include/NegativeOperator.h" />
+		<Unit filename="include/Operator.h" />
+		<Unit filename="include/OperatorStack.h" />
+		<Unit filename="include/OperatorStatus.h" />
+		<Unit filename="include/Polynomial.h" />
+		<Unit filename="include/PolynomialStack.h" />
+		<Unit filename="include/PolynomialStatus.h" />
+		<Unit filename="include/PositiveOperator.h" />
+		<Unit filename="include/RationalNumber.h" />
+		<Unit filename="include/RightBracketOperator.h" />
+		<Unit filename="include/Status.h" />
+		<Unit filename="include/SubtractionOperator.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/AdditionOperator.cpp" />
+		<Unit filename="src/ArithmeticOperator.cpp" />
+		<Unit filename="src/DivisionOperator.cpp" />
+		<Unit filename="src/EndOperator.cpp" />
+		<Unit filename="src/ExponentiationOperator.cpp" />
+		<Unit filename="src/Expression.cpp" />
+		<Unit filename="src/LeftBracketOperator.cpp" />
+		<Unit filename="src/MultiplicationOperator.cpp" />
+		<Unit filename="src/NegativeOperator.cpp" />
+		<Unit filename="src/Operator.cpp" />
+		<Unit filename="src/OperatorStatus.cpp" />
+		<Unit filename="src/Polynomial.cpp" />
+		<Unit filename="src/PolynomialStatus.cpp" />
+		<Unit filename="src/PositiveOperator.cpp" />
+		<Unit filename="src/RationalNumber.cpp" />
+		<Unit filename="src/RightBracketOperator.cpp" />
+		<Unit filename="src/SubtractionOperator.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,148 @@
+# depslib dependency file v1.0
+1450363017 source:f:\expressioncalc\expressioncalc\main.cpp
+	<iostream>
+	"Expression.h"
+
+1450401179 f:\expressioncalc\expressioncalc\include\expression.h
+	<iostream>
+	<vector>
+	<cmath>
+	"Polynomial.h"
+	"OperatorStack.h"
+	"PolynomialStack.h"
+	"EndOperator.h"
+	"OperatorStatus.h"
+	"PolynomialStatus.h"
+	"AdditionOperator.h"
+	"SubtractionOperator.h"
+	"MultiplicationOperator.h"
+	"DivisionOperator.h"
+	"ExponentiationOperator.h"
+	"LeftBracketOperator.h"
+	"RightBracketOperator.h"
+	"EndOperator.h"
+	"NegativeOperator.h"
+	"PositiveOperator.h"
+
+1450402319 f:\expressioncalc\expressioncalc\include\polynomial.h
+	<vector>
+	"RationalNumber.h"
+
+1450401515 f:\expressioncalc\expressioncalc\include\rationalnumber.h
+	<iostream>
+	<algorithm>
+	<limits>
+	<stdexcept>
+	<cmath>
+
+1450365474 source:f:\expressioncalc\expressioncalc\src\endoperator.cpp
+	"EndOperator.h"
+
+1450401891 f:\expressioncalc\expressioncalc\include\endoperator.h
+	"Operator.h"
+
+1450365128 f:\expressioncalc\expressioncalc\include\operator.h
+	"OperatorStack.h"
+	"PolynomialStack.h"
+
+1450365641 f:\expressioncalc\expressioncalc\include\operatorstack.h
+	<stack>
+
+1450401658 f:\expressioncalc\expressioncalc\include\polynomialstack.h
+	<stack>
+	"Polynomial.h"
+
+1450365932 source:f:\expressioncalc\expressioncalc\src\additionoperator.cpp
+	"AdditionOperator.h"
+
+1450401846 f:\expressioncalc\expressioncalc\include\additionoperator.h
+	"ArithmeticOperator.h"
+
+1450401855 f:\expressioncalc\expressioncalc\include\arithmeticoperator.h
+	"Operator.h"
+
+1450365792 source:f:\expressioncalc\expressioncalc\src\arithmeticoperator.cpp
+	"ArithmeticOperator.h"
+
+1450400936 f:\expressioncalc\expressioncalc\include\status.h
+	"Status.h"
+	"OperatorStack.h"
+	"PolynomialStack.h"
+
+1450366153 source:f:\expressioncalc\expressioncalc\src\divisionoperator.cpp
+	"DivisionOperator.h"
+
+1450401891 f:\expressioncalc\expressioncalc\include\divisionoperator.h
+	"ArithmeticOperator.h"
+
+1450400712 source:f:\expressioncalc\expressioncalc\src\exponentiationoperator.cpp
+	"ExponentiationOperator.h"
+
+1450401891 f:\expressioncalc\expressioncalc\include\exponentiationoperator.h
+	"ArithmeticOperator.h"
+
+1450401947 f:\expressioncalc\expressioncalc\include\operatorstatus.h
+	"Status.h"
+	"PolynomialStatus.h"
+	"LeftBracketOperator.h"
+
+1450401947 f:\expressioncalc\expressioncalc\include\polynomialstatus.h
+	"Status.h"
+	"OperatorStatus.h"
+	"RightBracketOperator.h"
+	"MultiplicationOperator.h"
+
+1450401947 f:\expressioncalc\expressioncalc\include\subtractionoperator.h
+	"ArithmeticOperator.h"
+
+1450401891 f:\expressioncalc\expressioncalc\include\multiplicationoperator.h
+	"ArithmeticOperator.h"
+
+1450401891 f:\expressioncalc\expressioncalc\include\leftbracketoperator.h
+	"Operator.h"
+
+1450401947 f:\expressioncalc\expressioncalc\include\rightbracketoperator.h
+	"Operator.h"
+
+1450401891 f:\expressioncalc\expressioncalc\include\negativeoperator.h
+	"Operator.h"
+
+1450401947 f:\expressioncalc\expressioncalc\include\positiveoperator.h
+	"Operator.h"
+
+1450401349 source:f:\expressioncalc\expressioncalc\src\expression.cpp
+	"Expression.h"
+
+1450400020 source:f:\expressioncalc\expressioncalc\src\leftbracketoperator.cpp
+	"LeftBracketOperator.h"
+
+1450366109 source:f:\expressioncalc\expressioncalc\src\multiplicationoperator.cpp
+	"MultiplicationOperator.h"
+
+1450400048 source:f:\expressioncalc\expressioncalc\src\negativeoperator.cpp
+	"NegativeOperator.h"
+
+1450400066 source:f:\expressioncalc\expressioncalc\src\operator.cpp
+	"Operator.h"
+
+1450363303 source:f:\expressioncalc\expressioncalc\src\operatorstatus.cpp
+	"OperatorStatus.h"
+
+1450400817 source:f:\expressioncalc\expressioncalc\src\polynomial.cpp
+	"Polynomial.h"
+
+1450363328 source:f:\expressioncalc\expressioncalc\src\polynomialstatus.cpp
+	"PolynomialStatus.h"
+
+1450400470 source:f:\expressioncalc\expressioncalc\src\positiveoperator.cpp
+	"PositiveOperator.h"
+
+1450400791 source:f:\expressioncalc\expressioncalc\src\rationalnumber.cpp
+	"RationalNumber.h"
+
+1450400662 source:f:\expressioncalc\expressioncalc\src\rightbracketoperator.cpp
+	"RightBracketOperator.h"
+
+1450366053 source:f:\expressioncalc\expressioncalc\src\subtractionoperator.cpp
+	"SubtractionOperator.h"
+
